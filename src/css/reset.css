@@ -1,4 +1,10 @@
 /* Reset styles */
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-color);
+  background-color: #e2e2e2;
+}
+
 h1,
 h2,
 h3,
@@ -34,6 +40,10 @@ img {
   height: auto;
 }
 
-body {
-  font-family: var(--main-font-family);
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
