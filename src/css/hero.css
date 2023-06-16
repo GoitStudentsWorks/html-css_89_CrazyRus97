@@ -12,14 +12,39 @@
     margin: -1px;
 }
 
+
+
+.container-hero{
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 72px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-hero{
+   
+    padding-top: 395px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(/src/img/hero/bg-hero-desktop.jpg);
+    background-color: black;
+    border-radius: 30px;
+}
+
 .title-hero{
 
-    font-style: normal;
+        font-style: normal;
         font-weight: 500;
         /*  */
+        max-width: 295px;
         font-size: 20px;
         line-height: 1.20;
+        margin-bottom: 32px;
+
         /*  */
-        letter-spacing: -0.03em;
+        letter-spacing: 0.03em;
         color: #FFFFFF;
 }
