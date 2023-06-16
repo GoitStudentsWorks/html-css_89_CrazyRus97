@@ -1,4 +1,10 @@
 /* Reset styles */
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-color);
+  background-color: #e2e2e2;
+}
+
 h1,
 h2,
 h3,
@@ -32,4 +38,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
