@@ -32,6 +32,8 @@
 }
 
 .section-four-list-item {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -39,9 +41,12 @@
 }
 
 .section-four-list-item::before {
+  display: block;
   content: '';
+  margin-right: 8px;
   width: 8px;
   height: 8px;
   background: #4c4c4c;
-  border: #eceded;
+  border: 1px solid #eceded;
+  border-radius: 50%;
 }
