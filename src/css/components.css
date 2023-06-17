@@ -24,6 +24,10 @@
   }
 }
 
+.text-accent {
+  color: var(--accent-color);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
