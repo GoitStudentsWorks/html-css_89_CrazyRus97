@@ -1,6 +1,6 @@
 /* subcribe */
 .section-subcribe {
-  background-color: var(--second-color);
+  /* background-color: var(--second-color); */
   background-image: url(/img/subcribe/subcribe-mb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,23 +105,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 /* мобилка */
 @media screen and (max-width: 767px) {
 
-  .section-subcribe {
-    padding: 62px 0;
-  }
-
   .container {
     max-width: 366px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 
   .subcribe-title {
     font-size: 20px;
     line-height: 1.2;
-    /* max-width: 326px; */
   }
-
-  /* .subcribe-text {
-    max-width: 326px;
-  } */
 
   .subcribe-btn {
     min-width: 128px;
@@ -142,31 +135,21 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 @media screen and (max-width: 1200px) {}
 
 /* только планшет */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  /* секция или контейнер,?? */
-  .section-subcribe {
-    /* padding-left: 150px;
-        padding-right: 150px; */
-  }
-
-}
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
 
 /* планшет и дескт */
 @media screen and (min-width: 768px) {
-  .section-subcribe {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    .container {
+    padding: 72px 0;
+    max-width: 467px;
   }
 
-
-  .container {
-    /* max-width: ; */
-  }
 
   .subcribe-title {
     font-size: 24px;
     line-height: 1.16;
+    max-width: 378px;
+    margin: 0 auto 24px;
   }
 
   .subcribe-btn {
