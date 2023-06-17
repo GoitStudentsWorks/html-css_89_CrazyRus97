@@ -1,74 +1,108 @@
 .unique-components-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 /* ========TITLE SECTION======== */
 
 .components-title {
-    max-width: 283px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 24px;
+  max-width: 283px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.20;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--main-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .components-title-span {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .components-title-description {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--main-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-color);
 }
 
-
-
-@media  screen and (min-width: 768px) {
-.unique-components-section {
+@media screen and (min-width: 768px) {
+  .unique-components-section {
     padding-top: 100px;
     padding-bottom: 100px;
-}
+  }
 
-/* ========TITLE SECTION======== */
+  /* ========TITLE SECTION======== */
 
-.components-title {
+  .components-title {
     max-width: 411px;
     margin-bottom: 28px;
 
     font-size: 24px;
     line-height: 1.17;
-}
+  }
 
-.components-title-description {
+  .components-title-description {
     max-width: 486px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
+  }
 }
-}
 
-
-
-@media  screen and (min-width: 1200px) {
-.unique-components-section {
+@media screen and (min-width: 1200px) {
+  .unique-components-section {
     padding-top: 128px;
     padding-bottom: 128px;
+  }
 }
+
+/* ============FLIP CARD============ */
+
+.components-item {
+  width: 335px;
+  height: 270px;
+
+  perspective: 1000px;
+
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
+.components-item:hover .flip-card,
+.components-item:focus .flip-card {
+  transform: rotateY(180deg);
+}
 
+.components-front-card,
+.components-back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.components-back-card {
+  transform: rotateY(180deg);
+}
+
+/* -----FRONT SIDE----- */
+
+/* -----BACK SIDE----- */
