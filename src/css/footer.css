@@ -19,23 +19,121 @@
   margin-bottom: 32px;
 }
 
+.footer-top-part {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-contact-social-part {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-contact {
   display: block;
-  font-size: 14px;
-  line-height: 1.29;
 }
 
 .footer-contact-text {
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
   margin-bottom: 14px;
 }
 
 .footer-contact-info {
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  display: block;
   font-style: normal;
 }
 
+.footer-contact-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 14px;
+}
+
 .footer-social-list-icon {
-  fill: #ffffff;
+  stroke: #ffffff;
+}
+.footer-social-list-icon:hover,
+.footer-social-list-icon:focus {
+  stroke: var(--accent-color);
+}
+
+.footer-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+/* .footer-menu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: rotate(180deg);
+} */
+
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+  }
+
+  .footer-title-text {
+    margin-bottom: 0;
+  }
+
+  .footer-contact-social-part {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .footer-menu {
+    flex-direction: row;
+    gap: 24px;
+  }
+  /*   .footer-menu::before {
+    top: -24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: rotate(180deg);
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-top-part {
+    padding-bottom: 58px;
+  }
+
+  .footer-contact-social-part {
+    gap: 63px;
+  }
 }
