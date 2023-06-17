@@ -1,7 +1,3 @@
-.text-accent {
-  color: var(--accent-color);
-}
-
 .page-footer {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -137,3 +133,5 @@
     gap: 63px;
   }
 }
+
+/* TEST */
