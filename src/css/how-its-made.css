@@ -1,3 +1,7 @@
+.section-four {
+  font-family: var(--main-font-family);
+}
+
 .section-four-header {
   font-weight: 600;
   font-size: 20px;
