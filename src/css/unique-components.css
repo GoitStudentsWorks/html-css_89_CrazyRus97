@@ -65,6 +65,7 @@
 /* ============FLIP CARD============ */
 
 .components-item {
+  max-width: 335px;
   height: 270px;
   overflow: hidden;
   perspective: 1000px;
@@ -186,7 +187,7 @@
 
 .components-back-descr {
   width: 100%;
-  max-height: 162px;
+  max-height: 146px;
 
   overflow: auto;
 
@@ -260,6 +261,10 @@
 
   .components-back-card {
     padding: 20px;
+  }
+
+  .components-back-descr {
+    max-height: 162px;
   }
 
   .components-item:last-child .components-back-descr {
