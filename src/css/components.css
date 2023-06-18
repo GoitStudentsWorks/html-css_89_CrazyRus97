@@ -40,3 +40,17 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.7);
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 8px;
+
+  background: var(--accent-color);
+}

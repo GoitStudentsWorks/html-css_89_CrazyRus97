@@ -4,6 +4,8 @@
   | default @import url()
   |============================
 */
+@import url('swiper/css');
+@import url('swiper/css/pagination');
 @import url('./root.css');
 @import url('./reset.css');
 @import url('./components.css');

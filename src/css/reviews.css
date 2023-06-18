@@ -41,17 +41,24 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  z-index: 9999;
 }
 /* --------- /COMMON --------- */
 
 /* --------- REVIEWS SECTION ---------*/
 
-/* SWIPER */
 .reviews-swiper-container {
-  /* width: 1136px; */
-  background-color: cadetblue;
+  overflow: hidden;
 }
-/* /SWIPER */
+
+.reviews-swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-title {
+  margin-bottom: 32px;
+}
 
 .reviewer-name {
   font-weight: 600;
@@ -76,7 +83,9 @@
   line-height: 1.21;
   background-color: transparent;
   color: #111111;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
   min-width: 165px;
   padding: 12px 28px;
   border: 1px solid var(--accent-color);
@@ -86,18 +95,17 @@
 .leave-review-btn:hover,
 .leave-review-btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white);
   outline: none;
 }
 
 .reviews-list {
-  margin-top: 74px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .review-item {
   position: relative;
-  background: #ffffff;
+  background: var(--white);
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
@@ -106,6 +114,7 @@
   padding-top: 56px;
   padding-left: 18px;
   padding-right: 18px;
+  margin-top: 42px;
 }
 
 .reviewer-photo {
@@ -121,9 +130,13 @@
     margin-top: 128px;
     margin-bottom: 128px;
   } */
+
+  .reviews-title {
+    margin-bottom: 50px;
+  }
+
   .reviews-list {
-    margin-top: 91px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 32px;
   }
 
   .review-item {
@@ -136,6 +149,7 @@
     line-height: 1.22;
     padding: 14px 40px;
     min-width: 222px;
+    margin-top: 50px;
   }
 }
 
@@ -151,16 +165,16 @@
 
 /* --------- MODAL WINDOW - SEND REVIEW --------- */
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 311px;
   min-height: 471px;
   padding: 32px 24px;
-  background: #fafafa;
+  background: var(--background);
   border-radius: 15px;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .modal-close-btn {
@@ -181,17 +195,13 @@
 }
 
 #review-modal .modal-close-icon {
-  stroke: #111111;
+  stroke: var(--main-color);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #fcf1e0;
+  background-color: var(--active-button-color);
 }
-
-/* .modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-} */
 
 .review-form-title {
   font-weight: 600;
@@ -247,8 +257,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
-  background: #fd9222;
+  color: var(--white);
+  background: var(--accent-color);
   border-radius: 100px;
   border: none;
   padding: 12px 28px;
@@ -262,7 +272,6 @@
   display: inline-flex;
   position: absolute;
   align-items: center;
-  /* justify-content: center; */
   gap: 8px;
   width: 74px;
   height: 25px;
