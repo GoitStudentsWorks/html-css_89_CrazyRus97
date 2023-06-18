@@ -251,13 +251,17 @@
 }
 
 .dialing-info-container {
-  display: flex;
+  display: inline-flex;
   position: absolute;
   align-items: center;
-  column-gap: 8px;
+  /* justify-content: center; */
+  gap: 8px;
+  width: 74px;
+  height: 25px;
   top: 50%;
   left: 18px;
   transform: translateY(-50%);
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .dialing-info-container .country-code {
@@ -266,17 +270,6 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #000000;
-}
-
-.dialing-info-container::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 74px;
-  width: 1.5px;
-  height: 25px;
-  background-color: #e1e1e0;
 }
 
 @media screen and (min-width: 768px) {
@@ -325,18 +318,20 @@
 
   .dialing-info-container {
     left: 24px;
-    column-gap: 18px;
+    gap: 18px;
+    width: 125px;
+    height: 32px;
+    box-shadow: 2.72px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-form-field-icon {
+    width: 32px;
+    height: 24px;
   }
 
   .dialing-info-container .country-code {
     font-size: 18px;
     line-height: 1.22;
-  }
-
-  .dialing-info-container::after {
-    left: 125px;
-    width: 2.75px;
-    height: 32px;
   }
 
   .send-review-btn {
