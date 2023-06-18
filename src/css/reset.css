@@ -1,8 +1,9 @@
 /* Reset styles */
 body {
+  margin: 0;
   font-family: var(--main-font-family);
   color: var(--main-color);
-  background-color: #fafafa;
+  background-color: var(--background);
 }
 
 h1,

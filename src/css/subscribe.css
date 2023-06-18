@@ -1,174 +1,441 @@
-/* subcribe */
+
+/* ====================== subcribe ====================== */
 .section-subcribe {
-  /* background-color: var(--second-color); */
-  background-image: url(/img/subcribe/subcribe-mb.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* max-width: 1200px;
-  margin: 0 auto; */
-}
-
-
-/* screen 2x + 0px - 767px */
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-mb@2x.jpg);
+    background-color: var(--second-color);
+    background-image: url(/img/subcribe/subcribe-mb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-}
-
-/* 768px + */
-@media screen and (min-width: 768px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-tb.jpg);
+  
+  
+  /* screen 2x + 0px - 767px */
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .section-subcribe {
+      background-image: url(/img/subcribe/subcribe-mb@2x.jpg);
+    }
   }
-}
-
-/* screen 2x + 768px + */
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-tb@2x.jpg);
+  
+  /* 768px + */
+  @media screen and (min-width: 768px) {
+    .section-subcribe {
+      background-image: url(/img/subcribe/subcribe-tb.jpg);
+    }
   }
-}
-
-/* 1200px + */
-@media screen and (min-width: 1200px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-dt.jpg);
+  
+  /* screen 2x + 768px + */
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .section-subcribe {
+      background-image: url(/img/subcribe/subcribe-tb@2x.jpg);
+    }
   }
-}
-
-/* screen 2x + 1200px + */
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-dt@2x.jpg);
+  
+  /* 1200px + */
+  @media screen and (min-width: 1200px) {
+    .section-subcribe {
+      background-image: url(/img/subcribe/subcribe-dt.jpg);
+    }
   }
-}
-
-
-.subcribe-title {
-  color: #FFFFFF;
-
-  font-family: var(--main-font-family);
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  /* margin: 0 auto 24px; */
-}
-
-.subcribe-text {
-  font-family: var(--main-font-family);
-  /* font-size: normal; */
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
-  margin-bottom: 24px;
-  /* margin: 0 auto 24px; */
-}
-
-.subcribe-btn {
-  background-color: var(--accent-color);
-  cursor: pointer;
-  border-radius: 100px;
-  display: block;
-  margin: 0 auto;
-  border: none;
-
-  font-family: var(--main-font-family);
-
-  color: #FFFFFF;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subcribe-btn:hover,
-.subcribe-btn:focus {
-  background-color: var(--active-button-color);
-  color: var(--accent-color);
-}
-
-
-
-/* мобилка */
-@media screen and (max-width: 767px) {
-
-  .container {
-    max-width: 366px;
-    padding-top: 62px;
-    padding-bottom: 62px;
+  
+  /* screen 2x + 1200px + */
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .section-subcribe {
+      background-image: url(/img/subcribe/subcribe-dt@2x.jpg);
+    }
   }
-
+  
+  
   .subcribe-title {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  .subcribe-btn {
-    min-width: 128px;
-    height: 41px;
-
-    padding: 12px 28px;
+    color: #FFFFFF;
+  
+    font-family: var(--main-font-family);
     font-weight: 600;
-
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  
+  .subcribe-text {
+    font-family: var(--main-font-family);
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.21;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
   }
-
-
-}
-
-
-/* мобилка и планшет */
-@media screen and (max-width: 1200px) {}
-
-/* только планшет */
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
-
-/* планшет и дескт */
-@media screen and (min-width: 768px) {
-    .container {
-    padding: 72px 0;
-    max-width: 467px;
-  }
-
-
-  .subcribe-title {
-    font-size: 24px;
-    line-height: 1.16;
-    max-width: 378px;
-    margin: 0 auto 24px;
-  }
-
+  
   .subcribe-btn {
-    min-width: 172px;
-
-    padding: 14px 40px;
-    font-weight: 600;
-
-    font-size: 18px;
-    line-height: 1.22;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-family: var(--main-font-family);
+    color: #FFFFFF;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  
+  .subcribe-btn:hover,
+  .subcribe-btn:focus {
+    background-color: var(--active-button-color);
+    color: var(--accent-color);
+  }
+  
+  /* ====================== backdrop ====================== */
+  .backdrop-subcribe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #FFFFFF;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+    }
+  
+    .modal-subcribe {
+      position: absolute;
+      max-width: 311px;
+      height: 350px;
+    
+      border-radius: 15px;
+    
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: #FAFAFA;
+      padding: 32px 24px 32px 24px;
+      /* overflow: scroll; */
+  
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .modal-subcribe {
+      background-image: url(/img/subcribe/tetiana-bykovets-mb.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 169px;
+      background-position: top left;
+    }
+    
+    
+    /* screen 2x + 0px - 767px */
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+      .modal-subcribe {
+        background-image: url(/img/subcribe/tetiana-bykovets-mb@2x.jpg);
+      }
+    }
+    
+    /* 768px + */
+    @media screen and (min-width: 768px) {
+      .modal-subcribe {
+        background-image: url(/img/subcribe/tetiana-bykovets-tb.jpg);
+      }
+    }
+    
+    /* screen 2x + 768px + */
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .modal-subcribe {
+        background-image: url(/img/subcribe/tetiana-bykovets-tb@2x.jpg);
+      }
+    }
+
+    /* 1200px + */
+  /* @media screen and (min-width: 1200px) {
+    .modal-subcribe {
+      background-image: url(/img/subcribe/tetiana-bykovets-dt.jpg);
+    }
+  } */
+  
+  /* screen 2x + 1200px + */
+  /* @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .modal-subcribe {
+      background-image: url(/img/subcribe/tetiana-bykovets-dt@2x.jpg);
+    }
+  } */
+    
+    
+    
+    .is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+  
+    .mogal-close-btn {
+      position: absolute;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 15px;
+      right: 14px;
+    
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 
 
-}
-
-
-/* только дескт */
-@media screen and (min-width: 1200px) {
-  .section-subcribe {}
-
-
-}
+    .modal-close-icon {
+      stroke: #FFFFFF;
+    
+    }
+    
+    .mogal-close-btn:hover .modal-close-icon,
+    .mogal-close-btn:focus .modal-close-icon {
+      stroke: #F16529;
+      width: 14px;
+      height: 14px;
+    }
+    
+    .mogal-close-btn:hover,
+    .mogal-close-btn:focus {
+      background-color: var(--active-button-color);
+    }
+    
+    
+    
+    .modal-text {
+      font-family: var(--main-font-family);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+    
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    
+      color: #111111;
+      margin-bottom: 24px;
+    }
+    
+    .modal-text-orange {
+      font-family: var(--main-font-family);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    
+      /* ) */
+    }
+    
+    
+    .contact-form-input {
+      width: 100%;
+      height: 45px;
+      border: 1px solid rgba(46, 47, 66, 0.2);
+      border-radius: 100px;
+      padding: 14px 18px;
+      background-color: transparent;
+      outline: transparent;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .contact-form-input::placeholder {
+      font-family: var(--main-font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    
+      color: rgba(64, 64, 64, 0.3);
+    
+    }
+    
+    .contact-form-input:focus,
+    .contact-form-input:hover {
+      border-color: var(--accent-color);
+    }
+    
+    .contact-form-submit {
+      padding: 14px 28px;
+      min-width: 100px;
+      height: 45px;
+      background-color: var(--accent-color);
+      border: none;
+      border-radius: 100px;
+    
+    
+      font-family: var(--main-font-family);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.2;
+    
+      text-align: center;
+    
+      color: #FFFFFF;
+    
+    
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+      position: absolute;
+      right: 0;
+    
+    }
+    
+    .contact-form-submit:focus,
+    .contact-form-submit:hover {
+      background-color: var(--active-button-color);
+      color: var(--accent-color);
+    }
+    
+    .modal-subcribe-bg {
+      padding-top: 169px;
+    }
+  
+  
+  
+  /* ====================== мобилка ====================== */
+  @media screen and (max-width: 767px) {
+  
+    .section-subcribe .container {
+      max-width: 366px;
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+  
+    .subcribe-title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  
+    .subcribe-btn {
+      min-width: 128px;
+      height: 41px;
+  
+      padding: 12px 28px;
+      font-weight: 600;
+  
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  
+     
+    .contact-form-conteiner-input {
+      position: relative;
+    }
+  
+  
+  }
+  
+  
+  /* ====================== мобилка и планшет ====================== */
+  @media screen and (max-width: 1200px) {}
+  
+  /* ====================== только планшет ====================== */
+  @media screen and (min-width: 768px) and (max-width: 1199px) {}
+  
+  /* ====================== планшет и дескт ====================== */
+  @media screen and (min-width: 768px) {
+    .section-subcribe .container {
+      padding: 72px 0;
+      max-width: 467px;
+    }
+  
+    .subcribe-title {
+      font-size: 24px;
+      line-height: 1.16;
+      max-width: 378px;
+      margin: 0 auto 24px;
+    }
+  
+    .subcribe-btn {
+      min-width: 172px;
+      padding: 14px 40px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  
+    .modal-subcribe {
+      max-width: 538px;
+      height: 412px;
+    
+      border-radius: 15px;
+    
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: #FAFAFA;
+      padding: 32px 24px 32px 24px;
+      /* overflow: scroll; */
+  
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .modal-subcribe {
+      background-size: 100% 196px;
+      padding: 40px;
+    }
+  
+    .modal-close-icon {
+      width: 14px;
+      height: 14px;
+    }
+  
+    .contact-form-input {
+      width: 313px;
+      height: 52px;
+      padding: 14px 24px;
+    }
+  
+    .contact-form-conteiner-input {
+      display: flex;
+      column-gap: 8px;
+    }
+  
+    .contact-form-input::placeholder {
+     
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+    
+      color: rgba(64, 64, 64, 0.3);
+    
+    }
+  
+    .contact-form-submit {
+      padding: 17px 40px;
+      min-width: 137px;
+      height: 52px;
+    
+    }
+    
+    .modal-subcribe-bg {
+      padding-top: 196px;
+    }
+  
+  }
+  
+  
+  /* ====================== только дескт ======================*/
+  @media screen and (min-width: 1200px) {}
