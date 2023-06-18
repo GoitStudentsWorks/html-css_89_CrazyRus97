@@ -1,50 +1,3 @@
-/* --------- COMMON --------- */
-
-.section {
-  margin-top: 72px;
-  margin-bottom: 72px;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    margin-top: 128px;
-    margin-bottom: 128px;
-  }
-}
-
-.section-header {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: -0.03em;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* modal window backprop */
-.backprop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  z-index: 9999;
-}
-/* --------- /COMMON --------- */
-
 /* --------- REVIEWS SECTION ---------*/
 
 .reviews-swiper-container {
@@ -126,11 +79,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .section {
-    margin-top: 128px;
-    margin-bottom: 128px;
-  } */
-
   .reviews-title {
     margin-bottom: 50px;
   }
