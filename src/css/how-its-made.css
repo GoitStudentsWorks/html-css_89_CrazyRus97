@@ -29,6 +29,12 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .container-image {
   position: relative;
 }
@@ -73,6 +79,7 @@
 }
 
 .section-four-background {
+  max-width: 335px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 14px;
