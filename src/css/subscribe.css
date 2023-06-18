@@ -1,5 +1,6 @@
 /* ====================== subcribe ====================== */
 .section-subcribe {
+  margin: 0 auto;
   background-color: var(--second-color);
   background-image: url(/img/subcribe/subcribe-mb.jpg);
   background-repeat: no-repeat;
