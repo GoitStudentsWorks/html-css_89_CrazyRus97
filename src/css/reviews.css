@@ -264,6 +264,13 @@
   padding: 12px 28px;
 }
 
+.send-review-btn:hover,
+.send-review-btn:focus {
+  color: var(--accent-color);
+  background: var(--active-button-color);
+  outline: none;
+}
+
 .review-form-input-wrapper {
   position: relative;
 }
