@@ -172,7 +172,7 @@
   outline: none;
 }
 
-.modal-close-icon {
+#review-modal .modal-close-icon {
   stroke: #111111;
 }
 
@@ -284,7 +284,7 @@
     height: 28px;
   }
 
-  .modal-close-icon {
+  #review-modal .modal-close-icon {
     width: 28px;
     height: 28px;
   }
