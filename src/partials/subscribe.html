@@ -7,3 +7,35 @@
         <button type="button" class="subcribe-btn" data-modal-open>Subcribe</button>
     </div>
 </section>
+
+<div class="backdrop-subcribe is-hidden" data-modal>
+
+    <div class="modal-subcribe">
+        <div class="modal-subcribe-bg">
+
+            <button type="button" class="mogal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="28" height="28">
+                    <use href="/img/icons.svg#icon-x-mark"> </use>
+                </svg>
+            </button>
+
+
+            <p class="modal-text">Explore our <span class="modal-text-orange"> new chocolate</span> first!</p>
+
+            <form class="contact-form">
+
+                <div class="contact-form-conteiner-input">
+                    <input class="contact-form-input" id="user-email" type="email" name="user_mailto"
+                        placeholder="Enter your email" required />
+                    <button type="submit" class="contact-form-submit">Send</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script src="./js/modal.js"></script>
