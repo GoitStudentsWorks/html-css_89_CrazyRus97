@@ -1,2 +1,2 @@
-import "./header-menu.js"
-import "./modal.js"
+import './js/header-menu.js'
+import './js/modal.js'
