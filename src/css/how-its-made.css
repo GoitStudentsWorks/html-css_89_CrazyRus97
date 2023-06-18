@@ -15,10 +15,13 @@
 
 .section-four-image {
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .section-four-background {
   padding: 20px 14px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .section-four-list-header {
@@ -40,7 +43,7 @@
   align-items: center;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: var(--main-color);
 }
 
