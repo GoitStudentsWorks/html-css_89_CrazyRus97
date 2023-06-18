@@ -13,6 +13,10 @@
   margin-bottom: 32px;
 }
 
+.made {
+  color: var(--accent-color);
+}
+
 .section-four-image {
   margin-bottom: 20px;
   border-radius: 15px;
