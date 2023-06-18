@@ -361,8 +361,6 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     font-size: 14px;
     line-height:1.21;
     
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);;
 
@@ -422,5 +420,83 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
 
 /* form */
 
+@media screen and (min-width:768px) {
 
+.modal-hero{
+    width: 609px;
+}
+
+.vrapper-modal-hero{
+padding: 48px;
+}
+
+.title-hero-modal{
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.list-hero-chocolate{
+    flex-direction: row;
+    column-gap: 16px;
+    row-gap: 0px;
+}
+
+.hero-chocolate-container{
+    flex-direction: column;
+    row-gap: 14px;
+    /* margin: 0; */
+    padding: 24px 20px 18px 20px;
+}
+
+.icon-chocolate-modal{
+    width: 120px;
+    height: 107px;
+}
+
+.button-modal-chocolate{
+    margin: 0;
+}
+
+.container-name{
+    width: calc((100% - 21px) / 2);
+}
+
+.wrapper-name-modal{
+    display: flex;
+    column-gap: 21px;
+    margin-bottom: 18px;
+}
+
+.label-hero-modal-surname,
+.label-hero-modal-name{
+    margin: 0;
+    align-self: flex-end;
+}
+
+.name-hero-input{
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.input-hero-modal-name::placeholder,
+.input-hero-modal-surname::placeholder,
+.input-hero-modal-email::placeholder,
+.input-hero-modal-number::placeholder,
+.input-hero-modal-number-card::placeholder,
+.textarea-modal-hero::placeholder {
+   
+    font-size: 18px;
+    line-height: 1.22;
+
+}
+
+.input-modal-hero {
+    padding: 22px 24px;
+}
+
+.textarea-modal-hero{
+    height: 137px;
+}
+
+}
 /* modal-styles */

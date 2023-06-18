@@ -35,7 +35,8 @@
         <ul class="list-hero-chocolate">
             <li class="hero-chocolate-container">
                 <img 
-                 src=""
+                class="icon-chocolate-modal"
+                 src="../img/hero/modal-hero/black-chocolate.png"
                  width="84"
                  height="69"
                  alt="Black chocolate">
@@ -43,7 +44,8 @@
             </li>
             <li class="hero-chocolate-container">
                 <img 
-                src="" 
+                class="icon-chocolate-modal"
+                src="../img/hero/modal-hero/milk-black.png" 
                 width="84" 
                 height="69"  
                 alt="Dark milk chocolate with nuts">
@@ -51,7 +53,8 @@
             </li>
             <li class="hero-chocolate-container">
                 <img 
-                src="" 
+                class="icon-chocolate-modal"
+                src="../img/hero/modal-hero/bar-of-chocolate.png" 
                 width="84" 
                 height="69"  
                 alt="Bar of chocolate">
@@ -61,29 +64,34 @@
 
         <form action="" class="form-hero-modal">
         
-           
-            <label class="label-hero-modal-name">
+           <div class="wrapper-name-modal">
+            <label class="label-hero-modal-name container-name">
             <span class="name-hero-input">Personal information</span>
              <input type="text" 
              name="name persona"
+             pattern="[a-zA-Zа-яА-ЯіІїЇєЄёЁ' ]+"
              required
              class="input-hero-modal-name input-modal-hero"
              placeholder="Name"
              >
             </label>
 
-            <label class="label-hero-modal-surname">
+            <label class="label-hero-modal-surname container-name">
             <input type="text" 
             name="surname persona"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄёЁ' ]+"
             required
             class="input-hero-modal-surname input-modal-hero"
             placeholder="Surname"
             >
             </label>
-           
+           </div>
+            
+
             <label class="label-hero-modal-email" >
                 <span class="name-hero-input" >Email</span>
             <input type="email"
+            [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
             name="email persona"
             required
             class="input-hero-modal-email input-modal-hero"
@@ -93,7 +101,7 @@
 
             <label class="label-hero-modal-number">
                 <span class="name-hero-input" >Phone number</span>
-            <input type="number"
+            <input type="phone"
             name="number persona"
             required
             class="input-hero-modal-number input-modal-hero"
@@ -103,9 +111,11 @@
 
             <label class="label-hero-modal-number-card">
                 <span class="name-hero-input">Card number</span>
-            <input type="number"
+            <input type="text"
             name="number card persona"
             required
+            pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+            title="XXXX-XXXX-XXXX-XXXX"
             class="input-hero-modal-number-card input-modal-hero"
             placeholder="Enter card"
             >
