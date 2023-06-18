@@ -15,8 +15,6 @@
   row-gap: 20px;
 }
 
-/* На tablet ті самі властивості що і на mobile */
-
 @media screen and (min-width: 1200px) {
   .container-img-list {
     display: flex;
@@ -53,10 +51,30 @@
 }
 
 .section-four-image {
+  max-width: 335px;
+  height: 500px;
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-four-image {
+    max-width: 614px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-four-image {
+    max-width: 600px;
+    height: 400px;
+  }
 }
 
 .section-four-background {
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px 14px;
   background-color: #fff;
   border-radius: 15px;
@@ -64,13 +82,22 @@
 
 @media screen and (min-width: 768px) {
   .section-four-background {
+    max-width: 614px;
+    max-height: 356px;
     padding: 32px;
-    background-color: #fff;
-    border-radius: 15px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-four-background {
+    max-width: 516px;
+    max-height: 400px;
+  }
+}
+
+
 .section-four-list-header {
+  max-width: 307px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -78,24 +105,44 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-four-list-header {
+    max-width: 350px;
+  }
+}
+
 .section-four-list {
-  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 18px;
 }
 
-/* На tablet ті самі властивості що і на mobile */
-
-
+@media screen and (min-width: 1200px) {
+  section-four-list {
+    row-gap: 24px;
+  }
+}
 
 .section-four-list-item {
+  max-width: 291px;
   display: flex;
   align-items: baseline;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-four-list-item {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-four-list-item {
+    max-width: 516px;
+  }
 }
 
 .section-four-list-item::before {
