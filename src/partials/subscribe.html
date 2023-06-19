@@ -7,45 +7,48 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subcribe-btn" data-modal-open>Subcribe</button>
+    <button
+      type="button"
+      class="subcribe-btn"
+      data-modal-open="subscribe-modal"
+    >
+      Subcribe
+    </button>
   </div>
 </section>
 
-<div class="backdrop-subcribe is-hidden" data-modal>
-  <div class="modal-subcribe">
-    <div class="modal-subcribe-bg">
-      <button type="button" class="mogal-close-btn" data-modal-close>
-        <svg class="modal-close-icon" width="28" height="28">
-          <use href="/img/icons.svg#icon-x-mark"></use>
-        </svg>
-      </button>
+<div class="backprop is-hidden" id="subscribe-modal" data-modal>
+  <div class="modal-subscribe">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg
+        class="modal-close-icon"
+        aria-label="close icon"
+        width="28"
+        height="28"
+      >
+        <use href="/img/icons.svg#icon-x-mark"></use>
+      </svg>
+    </button>
 
-      <p class="modal-text">
-        Explore our
-        <span class="modal-text-orange text-accent"> new chocolate</span> first!
-      </p>
+    <p class="modal-subscribe-text">
+      Explore our
+      <span class="text-accent">new chocolate</span> first!
+    </p>
 
-      <form class="contact-form">
-        <div class="contact-form-conteiner-input">
-          <input
-            class="contact-form-input"
-            id="user-email"
-            type="email"
-            name="user_mailto"
-            placeholder="Enter your email"
-            required
-          />
-          <button type="submit" class="contact-form-submit">Send</button>
-        </div>
-      </form>
-    </div>
+    <form class="modal-subscribe-contact-form">
+      <div class="modal-subscribe-contact-form-container-input">
+        <input
+          class="modal-subscribe-contact-form-input"
+          id="user-email"
+          type="email"
+          name="user_mailto"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" class="modal-subscribe-contact-form-submit">
+          Submit
+        </button>
+      </div>
+    </form>
   </div>
 </div>
-
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script src="/modal.js"></script>

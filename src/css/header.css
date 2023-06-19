@@ -60,7 +60,7 @@
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
   .menu-list-header,
   .header-social-list {
     display: none;
@@ -70,7 +70,7 @@
 .page-header {
   padding-top: 20px;
   padding-bottom: 14px;
-  background-color: #fafafa;
+  background-color: var(--background);
 }
 
 @media screen and (min-width: 768px) {
@@ -116,7 +116,7 @@
   stroke: var(--main-color);
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mobile-menu-open {
     display: none;
   }
@@ -200,7 +200,7 @@
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .mobile-menu-list {
@@ -253,9 +253,9 @@
 .mobile-menu-close-icon {
   display: inline-block;
   padding: 0;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    width 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--transition),
+    width var(--transition),
+    height var(--transition);
 }
 
 .mobile-menu-close-icon:hover,
@@ -292,7 +292,7 @@
   align-items: center;
   letter-spacing: -0.02em;
   color: var(--white);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 .mobile-menu-link:hover::after {
