@@ -304,6 +304,8 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     background-color: var(--background);
     border-radius: 15px;
     z-index: 999;
+    overflow-y: auto;
+    max-height: 95vh;
 }
 
 .close-modal-hero{
@@ -555,12 +557,11 @@ outline: 1px solid var(--accent-color);
 
 @media screen and (min-width:768px) {
 
-.modal-hero{
-    width: 609px;
-}
+
 
 .vrapper-modal-hero{
 padding: 48px;
+width: 609px;
 }
 
 .title-hero-modal{
