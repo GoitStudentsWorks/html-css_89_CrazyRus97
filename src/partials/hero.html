@@ -8,7 +8,7 @@
             to our finest ingredients for a moment of pure delight!</h2>
             <div class="hero-button-container">
             <ul class="list-hero-button">
-                <li><button type="button" class="button-hero-modal" >Buy now</button></li>
+                <li><button type="button" class="button-hero-modal "  data-modal-open="buy-modal">Buy now</button></li>
                 <li><a href="" class="link-scroll">How it’s made</a></li>
             </ul>
             
@@ -24,11 +24,11 @@
         </div>
     </div>
    <!-- modal -->
-<div class="modal-hero">
+<div class="modal-hero is-hidden" data-modal id="buy-modal" >
     <div class="vrapper-modal-hero">
-        <button class="close-modal-hero">
+        <button class="close-modal-hero  " data-modal-close>
             <svg class="svg-close-hero" width="24" height="24">
-                <use href="/src/img/icons.svg#icon-x-mark"></use>
+                <use href="img/icons.svg#icon-x-mark"></use>
             </svg>
         </button>
         <h2 class="title-hero-modal"><span class="modal-components-title">BUY</span> NOW</h2>
@@ -90,6 +90,7 @@
 
             <label class="label-hero-modal-email" >
                 <span class="name-hero-input" >Email</span>
+                
             <input type="email"
             [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
             name="email persona"
@@ -97,20 +98,30 @@
             class="input-hero-modal-email input-modal-hero"
             placeholder="Enter your email"
             >
+           
             </label>
 
             <label class="label-hero-modal-number">
                 <span class="name-hero-input" >Phone number</span>
+                <span class="flad-icon-modal">
             <input type="phone"
             name="number persona"
             required
-            class="input-hero-modal-number input-modal-hero"
+            class="input-hero-modal-number  input-number-modal"
             placeholder="Phone number"
             >
+            <div class="container-flag-number">
+            <svg class="flag-svg" width="32" height="24">
+                <use href="img/icons.svg#icon-flag-ua"></use>
+            </svg>
+            <p class="text-number-input">+380</p>
+            </div>
+            </span>
             </label>
 
             <label class="label-hero-modal-number-card">
                 <span class="name-hero-input">Card number</span>
+                <span class="master-card-modal-svg">
             <input type="text"
             name="number card persona"
             required
@@ -119,6 +130,10 @@
             class="input-hero-modal-number-card input-modal-hero"
             placeholder="Enter card"
             >
+            <svg class="mastercard-svg" width="32" height="21">
+                <use href="img/icons.svg#icon-mastercard"></use>
+            </svg>
+            </span>
             </label>
 
             <label class="textarea-hero-modal">
