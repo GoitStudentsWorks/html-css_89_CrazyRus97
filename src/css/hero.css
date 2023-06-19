@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    background-color: black;
+    background-color: var(--main-color);
     border-radius: 30px;
     overflow: hidden;
 }
@@ -34,7 +34,7 @@
 
         /*  */
         letter-spacing: -0.03em;
-        color: #FFFFFF;
+        color:var(--white);
 }
 
 .list-hero-button{
@@ -49,19 +49,21 @@
     font-size: 14px;
     line-height: 1.21;
 
-    color: #FFFFFF;
+    color: var(--white);
     padding: 12px 28px;
 
     border: none;
     background-color: var(--accent-color);
     border-radius: 100px;
+
+    transition: backgraund-color var(--transition), color var(--transition);
 }
 
 .link-scroll{
-    color: #FFFFFF;
+    color: var(--white);
     padding: 12px 28px;
     background-color: transparent;
-    border: 1px solid #FFFFFF ;
+    border: 1px solid var(--white) ;
     height:  40px;
     display: block;
     border-radius: 100px;
@@ -70,6 +72,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+
+    transition: backgraund-color var(--transition), color var(--transition);
 }
 
 .hero-svg-scroll{
@@ -78,27 +82,62 @@
  font-size: 12px;
  line-height: 1.17;
  letter-spacing: -0.03em;
- color: #FFFFFF;
+ color:var(--white);
 
  display: flex;
  column-gap: 12px;
  align-items: center;
+
+transition: backgraund-color var(--transition), color var(--transition);
 }
 
 .svg-hero{
 display: flex;
 justify-content: center;
 align-items: center;
+fill: var(--accent-color);
+transform: fill var(--transition);
 }
 
 .span-svg-hero{
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color:var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button-hero-modal:hover,
+.button-hero-modal:focus {
+    background-color: var(--active-button-color);
+    color: var(--accent-color);
+}
+
+.link-scroll:hover,
+.link-scroll:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.hero-svg-scroll:hover,
+.hero-svg-scroll:focus {
+    color: var(--accent-color);
+}
+
+.hero-svg-scroll:hover .span-svg-hero,
+.hero-svg-scroll:focus .span-svg-hero {
+    background-color: var(--accent-color);
+    fill: var(--white);
+}
+
+
+.hero-svg-scroll:hover .svg-hero,
+.hero-svg-scroll:focus .svg-hero {
+
+    fill: var(--white);
 }
 
 @media screen and  (min-device-pixel-ratio: 2) and (max-width: 767.9px) ,
@@ -112,7 +151,8 @@ screen and (min-resolution: 2dppx)  and (max-width: 767.9px){
             /* background-size: 335px 620px; */
     
         }
-   
+
+                  
 }
 
 @media screen and (min-width:768px){
@@ -189,7 +229,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) and (max-width: 1199.9p
     background-size: cover;
     }
 
-    .button-hero-modal:hover,
+    /* .button-hero-modal:hover,
     .button-hero-modal:focus{
      background-color: var(--active-button-color);
      color:var(--accent-color) ;
@@ -210,8 +250,15 @@ screen and (min-resolution: 2dppx) and (min-width:768px) and (max-width: 1199.9p
     .hero-svg-scroll:hover .span-svg-hero,
     .hero-svg-scroll:focus .span-svg-hero{
     background-color: var(--accent-color);
-    fill: #FFFFFF;
+    fill:var(--white);
     }
+
+    
+   .hero-svg-scroll:hover .svg-hero,
+   .hero-svg-scroll:focus .svg-hero {
+     
+     fill: var(--white);
+ } */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
@@ -239,23 +286,24 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
 
     position: fixed;
     z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fafafa;
-    overflow-y: auto;
-    max-height: 95vh;
-    width: 311px;
-
-    border-radius: 15px;
-
-    /* opacity: 1;
-    visibility: hidden;
-    pointer-events: none; */
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    
 }
 
 .vrapper-modal-hero{
+    position: fixed;
     padding: 32px 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background);
+    border-radius: 15px;
+    z-index: 999;
 }
 
 .close-modal-hero{
@@ -270,11 +318,11 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
 
     border-radius: 50%;
     border: none;
-    background-color:  #fafafa;
+    background-color: var(--background);
 }
 
 .svg-close-hero{
-    stroke: black;
+    stroke: var(--main-color);
 }
 
 .title-hero-modal{
@@ -305,7 +353,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     justify-content: center;
     align-items: center;
 
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
 
@@ -322,13 +370,23 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     font-size: 14px;
     line-height: 1.21;
    
-    color: #111111;
+    color: var(--main-color);
 
     height: 29px;
     
-    background: #FAFAFA;
+    background: var(--background);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
+
+    transition: backgraund-color var(--transition), color var(--transition);
+}
+
+.button-modal-chocolate:hover,
+.button-modal-chocolate:focus,
+.button-modal-chocolate:active
+{
+    color: var(--white);
+    background-color: var(--accent-color);
 }
 
 /* form */
@@ -383,7 +441,8 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
 .input-hero-modal-number:focus,
 .input-hero-modal-number-card:focus,
 .textarea-modal-hero:focus{
-outline: none;
+outline: 1px solid var(--accent-color);
+
 }
 
 
@@ -426,13 +485,14 @@ outline: none;
     padding: 12px 28px;
     border: none;
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--white);
     border-radius: 100px;
+    transition: backgraund-color var(--transition), color var(--transition);
 }
 
 .button-hero-modal-form:hover,
 .button-hero-modal-form:focus{
-    background: #FCF1E0;
+    background: var(--active-button-color);
     color: var(--accent-color);
 }
 
