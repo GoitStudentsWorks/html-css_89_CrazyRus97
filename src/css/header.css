@@ -60,7 +60,7 @@
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
   .menu-list-header,
   .header-social-list {
     display: none;
@@ -116,7 +116,7 @@
   stroke: var(--main-color);
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mobile-menu-open {
     display: none;
   }
