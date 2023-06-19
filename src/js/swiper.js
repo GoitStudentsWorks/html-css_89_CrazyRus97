@@ -7,6 +7,20 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable: true
   },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3
+     
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 28
+      
+    }
+  }
 
   // Navigation arrows
 //   navigation: {
