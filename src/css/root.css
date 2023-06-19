@@ -47,4 +47,5 @@
   --active-button-color: #fcf1e0;
   --white: #ffffff;
   --background: #fafafa;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
