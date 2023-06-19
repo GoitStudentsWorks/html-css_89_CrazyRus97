@@ -16,7 +16,7 @@
   align-items: center;
   letter-spacing: -0.02em;
   color: var(--main-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 28px;
@@ -52,7 +52,7 @@
 }
 
 .header-social-link {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 
 .header-social-link:hover,
@@ -253,8 +253,7 @@
 .mobile-menu-close-icon {
   display: inline-block;
   padding: 0;
-  transition: stroke var(--transition),
-    width var(--transition),
+  transition: stroke var(--transition), width var(--transition),
     height var(--transition);
 }
 
@@ -320,20 +319,6 @@
 .mobile-menu-item {
   position: relative;
 }
-
-/* .current-mobile {
-  color: var(--accent-color);
-}
-
-.current-mobile::after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 25px;
-  height: 2px;
-  background-color: var(--accent-color);
-  width: 20%;
-} */
 
 .mobile-social-list {
   display: flex;
