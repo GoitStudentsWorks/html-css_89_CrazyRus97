@@ -19,12 +19,12 @@
                     </svg>
                 </span>
                 </a>
-            </ul>
+
             </div>
         </div>
     </div>
    <!-- modal -->
-<div class="modal-hero is-hidden" data-modal id="buy-modal" >
+ <div class="modal-hero is-hidden" data-modal id="buy-modal" >
     <div class="vrapper-modal-hero">
         <button class="close-modal-hero  " data-modal-close>
             <svg class="svg-close-hero" width="24" height="24">
@@ -62,7 +62,7 @@
             </li>
         </ul>
 
-        <form action="" class="form-hero-modal">
+        <form  class="form-hero-modal">
         
            <div class="wrapper-name-modal">
             <label class="label-hero-modal-name container-name">
@@ -92,7 +92,7 @@
                 <span class="name-hero-input" >Email</span>
                 
             <input type="email"
-            [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             name="email persona"
             required
             class="input-hero-modal-email input-modal-hero"
@@ -104,18 +104,18 @@
             <label class="label-hero-modal-number">
                 <span class="name-hero-input" >Phone number</span>
                 <span class="flad-icon-modal">
-            <input type="phone"
+            <input type="tel"
             name="number persona"
             required
             class="input-hero-modal-number  input-number-modal"
             placeholder="Phone number"
             >
-            <div class="container-flag-number">
+            <span class="container-flag-number">
             <svg class="flag-svg" width="32" height="24">
                 <use href="img/icons.svg#icon-flag-ua"></use>
             </svg>
-            <p class="text-number-input">+380</p>
-            </div>
+            <span class="text-number-input">+380</span>
+            </span>
             </span>
             </label>
 
@@ -153,5 +153,4 @@
     </div>
 </div>
 <!-- modal -->
-    
 </section>
