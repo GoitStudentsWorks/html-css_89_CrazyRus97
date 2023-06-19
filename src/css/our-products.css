@@ -18,16 +18,13 @@
   color: var(--accent-color);
 }
 
-.our-products-list {
-}
-
 .our-products-item {
   align-items: center;
   box-sizing: border-box;
   width: 335px;
   margin-bottom: 20px;
   background: var(--white);
-  border: 1px solid rgba(17, 17, 17, 0.8);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
 
@@ -77,6 +74,7 @@
   background: var(--background);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+  transition: background var(--transition), color var(--transition);
 }
 
 .products-card-btn:hover,
@@ -112,7 +110,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .our-products-item {
-    width: 270px;
+  .our-products-item:not(:last-child) {
+    margin-right: 18px;
   }
 }
