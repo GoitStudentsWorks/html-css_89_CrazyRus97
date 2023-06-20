@@ -110,15 +110,15 @@
 @media screen and (min-width: 768px) {
   .section-four-background {
     width: 614px;
-    max-height: 356px;
+    height: 356px;
     padding: 32px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-four-background {
-    max-width: 516px;
-    max-height: 400px;
+    width: 516px;
+    height: 400px;
   }
 }
 
@@ -145,7 +145,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  section-four-list {
+  .section-four-list {
     row-gap: 24px;
   }
 }
@@ -171,7 +171,7 @@
   }
 }
 
-.section-four-list-item::before {
+ .section-four-list-item::before {
   display: block;
   content: '';
   margin-right: 8px;
