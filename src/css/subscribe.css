@@ -14,10 +14,11 @@
 }
 
 .section-subscribe .container {
-  max-width: 326px;
+  /* max-width: 326px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
+
 
 /* screen 2x + 0px - 767px */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -75,10 +76,12 @@
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 1.2;
+  max-width: 291px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .subscribe-text {
-  max-width: 326px;
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 14px;
@@ -86,7 +89,11 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: var(--white);
+  opacity: 0.8;
   margin-bottom: 24px;
+  max-width: 326px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .subscribe-btn {
@@ -271,7 +278,7 @@
   }
 
   .section-subscribe .container {
-    max-width: 467px;
+    /* max-width: 467px; */
   }
 
   .subscribe-title {
