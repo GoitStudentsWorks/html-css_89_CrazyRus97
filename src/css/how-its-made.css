@@ -6,14 +6,12 @@
   .section-four {
     margin-bottom: 100px;
   }
-  
 }
 
 @media screen and (min-width: 1200px) {
   .section-four {
     margin-bottom: 128px;
   }
-  
 }
 
 .section-four-header {
@@ -64,6 +62,7 @@
 }
 
 .icon-play {
+  cursor: pointer;
   position: absolute;
   margin-right: auto;
   margin-left: auto;
@@ -103,7 +102,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 20px 14px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -122,13 +121,12 @@
   }
 }
 
-
 .section-four-list-header {
   max-width: 307px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  color: #111111;
+  color: var(--main-color);
   margin-bottom: 20px;
 }
 
@@ -159,7 +157,7 @@
   color: var(--main-color);
 }
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-four-list-item {
     width: 480px;
   }
@@ -171,11 +169,12 @@
   }
 }
 
- .section-four-list-item::before {
+.section-four-list-item::before {
   display: block;
   content: '';
+  box-sizing: border-box;
   margin-right: 8px;
-  padding-left: 8px;
+  padding-left: 6px;
   width: 8px;
   height: 8px;
   background: #4c4c4c;
