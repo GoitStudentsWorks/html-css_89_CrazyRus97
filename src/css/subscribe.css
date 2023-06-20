@@ -11,7 +11,9 @@
 }
 
 .section-subscribe .container {
-  width: 326px;
+  max-width: 326px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* screen 2x + 0px - 767px */
