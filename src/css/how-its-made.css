@@ -1,3 +1,21 @@
+.section-four {
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-four {
+    margin-bottom: 100px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .section-four {
+    margin-bottom: 128px;
+  }
+  
+}
+
 .section-four-header {
   font-weight: 600;
   font-size: 20px;
@@ -81,7 +99,7 @@
 }
 
 .section-four-background {
-  max-width: 335px;
+  width: 335px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 14px;
@@ -91,7 +109,7 @@
 
 @media screen and (min-width: 768px) {
   .section-four-background {
-    max-width: 614px;
+    width: 614px;
     max-height: 356px;
     padding: 32px;
   }
@@ -133,7 +151,6 @@
 }
 
 .section-four-list-item {
-  max-width: 291px;
   display: flex;
   align-items: baseline;
   font-size: 14px;
@@ -142,9 +159,9 @@
   color: var(--main-color);
 }
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
   .section-four-list-item {
-    max-width: 550px;
+    width: 464px;
   }
 }
 
