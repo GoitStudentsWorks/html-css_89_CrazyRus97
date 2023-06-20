@@ -68,6 +68,7 @@
 }
 
 .subscribe-text {
+  max-width: 326px;
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 14px;
@@ -260,7 +261,7 @@
   }
 
   .section-subscribe .container {
-    width: 467px;
+    max-width: 467px;
   }
 
   .subscribe-title {
@@ -268,6 +269,10 @@
     line-height: 1.16;
     max-width: 378px;
     margin: 0 auto 24px;
+  }
+
+  .subscribe-text {
+    max-width: 467px;
   }
 
   .subscribe-btn {
@@ -333,9 +338,8 @@
 }
 
 /*  */
-@media screen and (max-width:319.9px) {
-  
-  .modal-subscribe{
+@media screen and (max-width: 319.9px) {
+  .modal-subscribe {
     width: 95%;
   }
 }
