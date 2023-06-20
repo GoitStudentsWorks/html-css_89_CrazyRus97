@@ -205,23 +205,16 @@
   outline: none;
   transition: background-color var(--transition), border var(--transition);
 }
-/* .modal-close-icon {
+.subscribe-modal-close-icon {
   stroke: var(--white);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--active-button-color);
-} */
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: #f16529;
-  transform: scale(1.7);
-  transition: 250ms;
+  transition: stroke var(--transition);
 }
 
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  stroke: url(#gradient);
+.modal-close-btn:hover .subscribe-modal-close-icon,
+.modal-close-btn:focus .subscribe-modal-close-icon {
+  stroke: #f16529;
+  /*   transform: scale(1.7);
+  transition: 250ms; */
 }
 
 .modal-subscribe-text {
@@ -346,6 +339,11 @@
   .modal-close-btn {
     top: 24px;
     right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .subscribe-modal-close-icon {
     width: 28px;
     height: 28px;
   }
