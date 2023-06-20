@@ -1,32 +1,32 @@
-/* ====================== subcribe ====================== */
-.section-subcribe {
+/* ====================== subscribe ====================== */
+.section-subscribe {
   margin: 0 auto;
   padding-top: 62px;
   padding-bottom: 62px;
   background-color: var(--second-color);
-  background-image: url(/img/subcribe/subcribe-mb.jpg);
+  background-image: url(/img/subscribe/subscribe-mb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.section-subcribe .container {
-  width: 326px;
+.section-subscribe .container {
+  max-width: 326px;
 }
 
 /* screen 2x + 0px - 767px */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-mb@2x.jpg);
+  .section-subscribe {
+    background-image: url(/img/subscribe/subscribe-mb@2x.jpg);
   }
 }
 
 /* 768px + */
 @media screen and (min-width: 768px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-tb.jpg);
+  .section-subscribe {
+    background-image: url(/img/subscribe/subscribe-tb.jpg);
   }
 }
 
@@ -34,15 +34,15 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-tb@2x.jpg);
+  .section-subscribe {
+    background-image: url(/img/subscribe/subscribe-tb@2x.jpg);
   }
 }
 
 /* 1200px + */
 @media screen and (min-width: 1200px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-dt.jpg);
+  .section-subscribe {
+    background-image: url(/img/subscribe/subscribe-dt.jpg);
   }
 }
 
@@ -50,12 +50,12 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-subcribe {
-    background-image: url(/img/subcribe/subcribe-dt@2x.jpg);
+  .section-subscribe {
+    background-image: url(/img/subscribe/subscribe-dt@2x.jpg);
   }
 }
 
-.subcribe-title {
+.subscribe-title {
   color: var(--white);
   font-family: var(--main-font-family);
   font-weight: 600;
@@ -67,7 +67,7 @@
   line-height: 1.2;
 }
 
-.subcribe-text {
+.subscribe-text {
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 14px;
@@ -78,7 +78,7 @@
   margin-bottom: 24px;
 }
 
-.subcribe-btn {
+.subscribe-btn {
   background-color: var(--accent-color);
   border-radius: 100px;
   display: block;
@@ -97,8 +97,8 @@
   transition: background-color var(--transition), color var(--transition);
 }
 
-.subcribe-btn:hover,
-.subcribe-btn:focus {
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: var(--active-button-color);
   color: var(--accent-color);
 }
@@ -119,7 +119,7 @@
   padding-right: 24px;
   padding-bottom: 32px;
 
-  background-image: url(/img/subcribe/tetiana-bykovets-mb.jpg);
+  background-image: url(/img/subscribe/tetiana-bykovets-mb.jpg);
   background-size: 100% 169px;
   background-repeat: no-repeat;
   background-position: top;
@@ -131,13 +131,13 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .modal-subscribe {
-    background-image: url(/img/subcribe/tetiana-bykovets-mb@2x.jpg);
+    background-image: url(/img/subscribe/tetiana-bykovets-mb@2x.jpg);
   }
 }
 /* 768px + */
 @media screen and (min-width: 768px) {
   .modal-subscribe {
-    background-image: url(/img/subcribe/tetiana-bykovets-tb.jpg);
+    background-image: url(/img/subscribe/tetiana-bykovets-tb.jpg);
   }
 }
 /* screen 2x + 768px + */
@@ -145,7 +145,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .modal-subscribe {
-    background-image: url(/img/subcribe/tetiana-bykovets-tb@2x.jpg);
+    background-image: url(/img/subscribe/tetiana-bykovets-tb@2x.jpg);
   }
 }
 
@@ -228,8 +228,8 @@
   position: absolute;
   right: 24px;
 }
-.contact-form-submit:focus,
-.contact-form-submit:hover {
+.modal-subscribe-contact-form-submit:focus,
+.modal-subscribe-contact-form-submit:hover {
   background-color: var(--active-button-color);
   color: var(--accent-color);
 }
@@ -254,23 +254,23 @@
 
 /* ====================== планшет и дескт ====================== */
 @media screen and (min-width: 768px) {
-  .section-subcribe {
+  .section-subscribe {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 
-  .section-subcribe .container {
+  .section-subscribe .container {
     width: 467px;
   }
 
-  .subcribe-title {
+  .subscribe-title {
     font-size: 24px;
     line-height: 1.16;
     max-width: 378px;
     margin: 0 auto 24px;
   }
 
-  .subcribe-btn {
+  .subscribe-btn {
     min-width: 172px;
     height: 50px;
     padding: 14px 40px;
@@ -331,3 +331,12 @@
 /* ====================== только дескт ======================*/
 @media screen and (min-width: 1200px) {
 }
+
+/*  */
+@media screen and (max-width:319.9px) {
+  
+  .modal-subscribe{
+    width: 95%;
+  }
+}
+/*  */
