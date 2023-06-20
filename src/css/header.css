@@ -259,7 +259,7 @@
 
 .mobile-menu-close-icon:hover,
 .mobile-menu-close-icon:focus {
-  stroke: var(--accent-color);
+  stroke: #f16529;
   transform: scale(1.7);
   transition: 250ms;
 }
