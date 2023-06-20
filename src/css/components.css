@@ -67,17 +67,29 @@
 
 /* --------- SWIPER --------- */
 
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  position: static;
+}
+
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
-  background: rgba(17, 17, 17, 0.7);
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0;
 }
 
 .swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
   border-radius: 8px;
-
   background: var(--accent-color);
 }
 
