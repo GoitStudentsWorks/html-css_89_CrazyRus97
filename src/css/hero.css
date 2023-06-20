@@ -326,6 +326,9 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     justify-content: center;
     align-items: center;
 
+    width: 24px;
+    height: 24px;  
+
     border-radius: 50%;
     border: none;
     background-color: var(--background);
@@ -334,6 +337,15 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
 .svg-close-hero{
     stroke: var(--main-color);
 }
+
+.close-modal-hero:hover{
+    background-color: #FCF1E0;
+}
+
+.close-modal-hero:hover .svg-close-hero {
+fill: url(#gradient);
+}
+
 
 .title-hero-modal{
     font-style: normal;
