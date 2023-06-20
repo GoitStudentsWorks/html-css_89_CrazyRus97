@@ -8,7 +8,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper-container', {
   grabCursor: true,
   modules: [Pagination],
     pagination: {
-      el: '.reviews-swiper-pagination',
+      el: '.swiper-pagination',
       clickable: true,
   },
     // Responsive breakpoints

@@ -4,11 +4,6 @@
   overflow: hidden;
 }
 
-.reviews-swiper-pagination {
-  display: flex;
-  justify-content: center;
-}
-
 .reviews-title {
   margin-bottom: 32px;
 }
