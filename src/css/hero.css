@@ -313,6 +313,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px){
     z-index: 999;
     overflow-y: auto;
     max-height: 95vh;
+    width: 311px;
 }
 
 .close-modal-hero{
@@ -673,5 +674,15 @@ width: 609px;
    height: 30px;
 }
 
+}
+/* modal-styles */
+
+/* modal-styles */
+@media screen and (max-width:319.9px){
+   
+    .vrapper-modal-hero{
+        width: 95%;
+    }
+    
 }
 /* modal-styles */
