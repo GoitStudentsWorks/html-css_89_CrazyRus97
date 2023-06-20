@@ -4,7 +4,10 @@
   padding-top: 62px;
   padding-bottom: 62px;
   background-color: var(--second-color);
-  background-image: url(/img/subscribe/subscribe-mb.jpg);
+  background-image: 
+  linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+ rgba(0, 0, 0, 0.2)100%),
+   url(/img/subscribe/subscribe-mb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,6 +15,8 @@
 
 .section-subscribe .container {
   max-width: 326px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* screen 2x + 0px - 767px */
@@ -19,14 +24,16 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-subscribe {
-    background-image: url(/img/subscribe/subscribe-mb@2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+    rgba(0, 0, 0, 0.2)100%), url(/img/subscribe/subscribe-mb@2x.jpg);
   }
 }
 
 /* 768px + */
 @media screen and (min-width: 768px) {
   .section-subscribe {
-    background-image: url(/img/subscribe/subscribe-tb.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+    rgba(0, 0, 0, 0.2)100%), url(/img/subscribe/subscribe-tb.jpg);
   }
 }
 
@@ -35,14 +42,16 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-subscribe {
-    background-image: url(/img/subscribe/subscribe-tb@2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+    rgba(0, 0, 0, 0.2)100%), url(/img/subscribe/subscribe-tb@2x.jpg);
   }
 }
 
 /* 1200px + */
 @media screen and (min-width: 1200px) {
   .section-subscribe {
-    background-image: url(/img/subscribe/subscribe-dt.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+    rgba(0, 0, 0, 0.2)100%), url(/img/subscribe/subscribe-dt.jpg);
   }
 }
 
@@ -51,7 +60,8 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .section-subscribe {
-    background-image: url(/img/subscribe/subscribe-dt@2x.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%,
+    rgba(0, 0, 0, 0.2)100%), url(/img/subscribe/subscribe-dt@2x.jpg);
   }
 }
 
