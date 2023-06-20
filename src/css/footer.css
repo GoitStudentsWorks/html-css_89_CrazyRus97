@@ -57,10 +57,11 @@
 
 .footer-social-list-icon {
   fill: var(--white);
+  transition: fill var(--transition);
 }
 .footer-social-list-icon:hover,
 .footer-social-list-icon:focus {
-  stroke: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .footer-menu {
@@ -83,6 +84,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  transition: color var(--transition);
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {

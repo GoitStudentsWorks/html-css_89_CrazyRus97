@@ -122,16 +122,16 @@
 
 .components-item:first-child .components-front-card {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .components-item:nth-child(3) .components-front-card {
   background-color: var(--second-color);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .components-item:nth-child(even) .components-front-card {
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1px solid var(--accent-color);
   border-radius: 15px;
 }
@@ -141,7 +141,7 @@
 .components-back-card {
   padding: 28px;
 
-  background-color: #ffffff;
+  background-color: var(--white);
   border: none;
   border-radius: 15px;
 }
@@ -177,11 +177,11 @@
 .back-first-btn {
   background-color: var(--accent-color);
   border: none;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .back-second-btn {
-  background-color: #fafafa;
+  background-color: var(--background);
   border: 1px solid var(--accent-color);
 }
 
