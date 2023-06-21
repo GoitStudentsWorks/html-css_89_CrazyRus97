@@ -14,10 +14,6 @@
   color: var(--main-color);
 }
 
-.right-part-title {
-  color: var(--accent-color);
-}
-
 .our-products-item {
   align-items: center;
   box-sizing: border-box;
@@ -90,5 +86,7 @@
 
   .our-products-title {
     margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
