@@ -233,12 +233,20 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: transparent;
+  background: transparent;
   border: none;
+  border-radius: 50%;
+  outline: none;
   padding: 0;
   line-height: 0;
   width: 28px;
   height: 28px;
+  transition: background-color var(--transition);
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  background-color: var(--active-button-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -253,28 +261,20 @@
 .mobile-menu-close-icon {
   display: inline-block;
   padding: 0;
-  transition: stroke var(--transition), width var(--transition),
-    height var(--transition);
+  transition: stroke var(--transition);
 }
 
-.mobile-menu-close-icon:hover,
-.mobile-menu-close-icon:focus {
-  stroke: var(--accent-color);
-  transform: scale(1.7);
-  transition: 250ms;
+.mobile-menu-close-btn:hover .mobile-menu-close-icon,
+.mobile-menu-close-btn:focus .mobile-menu-close-icon {
+  stroke: #f16529;
+  /*   transform: scale(1.7);
+  transition: 250ms; */
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-close-icon {
-    width: 16px;
-    height: 16px;
-  }
-
-  .mobile-menu-close-icon:hover,
-  .mobile-menu-close-icon:focus {
-    stroke: var(--accent-color);
-    transform: scale(1.7);
-    transition: 250ms;
+    width: 32px;
+    height: 32px;
   }
 }
 
