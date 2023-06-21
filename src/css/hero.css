@@ -44,7 +44,6 @@
 }
 
 .button-hero-modal {
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -68,7 +67,6 @@
   display: block;
   border-radius: 100px;
 
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -77,7 +75,6 @@
 }
 
 .hero-svg-scroll {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
