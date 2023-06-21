@@ -42,6 +42,10 @@
   font-style: normal;
 }
 
+.footer-contact-list-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .footer-contact-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -53,6 +57,10 @@
 .footer-social-list {
   display: flex;
   gap: 14px;
+}
+
+.footer-social-list-link {
+  display: block;
 }
 
 .footer-social-list-icon {
@@ -69,15 +77,6 @@
   flex-direction: column;
   gap: 18px;
 }
-/* .footer-menu::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: -32px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transform: rotate(180deg);
-} */
 
 .footer-menu-link {
   font-weight: 500;
