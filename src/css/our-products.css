@@ -1,5 +1,5 @@
 .our-production-section {
-  margin-bottom: 72px;
+  /*   margin-bottom: 72px; */
   background-color: var(--background);
 }
 
@@ -12,10 +12,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--main-color);
-}
-
-.right-part-title {
-  color: var(--accent-color);
 }
 
 .our-products-item {
@@ -86,5 +82,11 @@
 @media screen and (min-width: 768px) {
   .our-products-item:not(:last-child) {
     margin-right: 18px;
+  }
+
+  .our-products-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
