@@ -8,9 +8,6 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-.name-orange {
-  color: var(--accent-color);
-}
 .discription-image-one {
   font-style: normal;
   font-weight: 400;
@@ -65,9 +62,9 @@
     flex-direction: row;
     gap: 16px;
   }
-  .top-sellers-section {
+  /*   .top-sellers-section {
     padding-top: 28px;
-  }
+  } */
   .name-section-top-sellers {
     font-size: 24px;
     line-height: 1.16;
@@ -101,13 +98,13 @@
   .item_pc {
     display: block;
   }
-  .discription-image-one {
+  /*   .discription-image-one {
     position: absolute;
     max-width: 407px;
-  }
-  .top-sellers-section {
+  } */
+  /*   .top-sellers-section {
     padding-bottom: 104px;
-  }
+  } */
   .button-div {
     position: absolute;
     right: 0;

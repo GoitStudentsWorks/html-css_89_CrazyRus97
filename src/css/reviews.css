@@ -1,4 +1,8 @@
 /* --------- REVIEWS SECTION ---------*/
+.reviews-section {
+  padding-bottom: 64px;
+}
+
 .reviews-title {
   margin-bottom: 32px;
 }
@@ -67,6 +71,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 100px;
+  }
+
   .reviews-title {
     margin-bottom: 50px;
   }
@@ -91,6 +99,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews-section {
+    padding-bottom: 128px;
+  }
+
   .review-item {
     width: 360px;
     padding-left: 24px;

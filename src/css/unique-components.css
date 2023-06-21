@@ -1,6 +1,5 @@
 .unique-components-section {
   padding-top: 72px;
-  padding-bottom: 72px;
 }
 
 /* ========TITLE SECTION======== */
@@ -34,7 +33,6 @@
 @media screen and (min-width: 768px) {
   .unique-components-section {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
 
   /* ========TITLE SECTION======== */
@@ -58,7 +56,6 @@
 @media screen and (min-width: 1200px) {
   .unique-components-section {
     padding-top: 128px;
-    padding-bottom: 128px;
   }
 }
 
