@@ -15,11 +15,11 @@
   background-position: center;
 }
 
-.section-subscribe .container {
-  /* max-width: 326px;
+/* .section-subscribe .container {
+  max-width: 326px;
   margin-left: auto;
-  margin-right: auto; */
-}
+  margin-right: auto;
+} */
 
 /* screen 2x + 0px - 767px */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
