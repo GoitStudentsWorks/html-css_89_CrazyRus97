@@ -1,8 +1,9 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
+import Swiper, { Pagination } from 'swiper';
 
-  // If we need pagination
+
+const ourProductsSwiper = new Swiper('#our-products-swiper', {
+  loop: true,
+  modules: [Pagination],
   pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -12,24 +13,37 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 768px
     768: {
       slidesPerView: 3
-     
+
     },
     // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
       spaceBetween: 28
-      
+
     }
   }
+});
 
-  // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
 
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
+const reviewsSwiper = new Swiper('#reviews-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  grabCursor: true,
+  modules: [Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+    // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 28
+    }
+  }
 });
