@@ -87,4 +87,8 @@
   .our-products-item:not(:last-child) {
     margin-right: 18px;
   }
+
+  .our-products-title {
+    margin-bottom: 50px;
+  }
 }
