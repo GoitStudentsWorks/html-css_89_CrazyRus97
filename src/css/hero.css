@@ -383,7 +383,8 @@ fill: url(#gradient);
 }
 
 .button-modal-chocolate{
-    display: block;
+    display: flex;
+    align-items: center;
     margin-left: auto;
     padding: 6px 16px;
 
@@ -595,14 +596,16 @@ width: 609px;
 
 .list-hero-chocolate{
     flex-direction: row;
-    column-gap: 16px;
+    column-gap: 14px;
     row-gap: 0px;
+   
 }
 
 .hero-chocolate-container{
     flex-direction: column;
     row-gap: 14px;
     /* margin: 0; */
+    width: calc((100% - 28px) / 3);
     padding: 24px 20px 18px 20px;
 }
 
@@ -613,6 +616,8 @@ width: 609px;
 
 .button-modal-chocolate{
     margin: 0;
+    padding: 8px 29px;
+    
 }
 
 .container-name{
