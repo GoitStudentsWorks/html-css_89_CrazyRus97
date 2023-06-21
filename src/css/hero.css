@@ -583,7 +583,7 @@
 
   .list-hero-chocolate {
     flex-direction: row;
-    column-gap: 16px;
+    column-gap: 14px;
     row-gap: 0px;
   }
 
