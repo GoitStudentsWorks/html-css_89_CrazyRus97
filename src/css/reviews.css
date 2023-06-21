@@ -1,9 +1,4 @@
 /* --------- REVIEWS SECTION ---------*/
-
-.reviews-swiper-container {
-  overflow: hidden;
-}
-
 .reviews-title {
   margin-bottom: 32px;
 }
@@ -59,9 +54,7 @@
   border-radius: 15px;
   width: 335px;
   height: 200px;
-  padding-top: 56px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 56px 18px 18px;
   margin-top: 42px;
 }
 
@@ -86,6 +79,7 @@
     width: 334px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 16px;
   }
   .leave-review-btn {
     font-size: 18px;
@@ -101,6 +95,7 @@
     width: 360px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 24px;
   }
 }
 

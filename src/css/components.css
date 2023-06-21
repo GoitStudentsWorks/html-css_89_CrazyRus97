@@ -67,6 +67,10 @@
 
 /* --------- SWIPER --------- */
 
+.swiper-container {
+  overflow: hidden;
+}
+
 .swiper-pagination {
   display: flex;
   justify-content: center;
