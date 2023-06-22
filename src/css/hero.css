@@ -564,6 +564,10 @@
   transform: translateY(-50%);
 }
 
+.input-hero-modal-number-card{
+  padding-right: 46px;
+}
+
 /* form */
 
 @media screen and (min-width: 768px) {
@@ -675,6 +679,10 @@
   .svg-close-hero {
     height: 28px;
     width: 28px;
+  }
+
+  .input-hero-modal-number-card{
+    padding-right: 68px;
   }
 }
 /* modal-styles */
